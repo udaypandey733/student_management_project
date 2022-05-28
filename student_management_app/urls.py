@@ -15,6 +15,8 @@ urlpatterns = [
 
     # URLS for Student
     path('student_home/', StudentViews.student_home, name="student_home"),
+    path('total_subjects/', StudentViews.total_subjects, name="total_subjects"),
+    path('notifications/', StudentViews.notifications, name="notifications"),
     path('student_view_attendance/', StudentViews.student_view_attendance, name="student_view_attendance"),
     path('student_view_attendance_post/', StudentViews.student_view_attendance_post,
          name="student_view_attendance_post"),
