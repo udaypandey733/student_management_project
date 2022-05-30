@@ -68,16 +68,17 @@
                 </p>
               </a>
             </li>
-            <li class="nav-item">
-              {% url 'student_apply_leave' as student_apply_leave %}
-              <a href="#" class="nav-link {% if request.path == student_apply_leave %} active {% endif %}">
-                <i style="font-size:24px" class="fa">&#xf019;</i>
-                <p>
-                  Study Materials
-                  {% comment %} <span class="right badge badge-danger">New</span> {% endcomment %}
-                </p>
-              </a>
-            </li>
+        <li class="nav-item">
+           href="{{ study_materials }}"
+           {% url 'study_materials' as study_materials %}
+          <a
+            class="nav-link {% if request.path == study_materials %} active {% endif %}"
+          <p>
+              Study Materials {% comment %}
+              <span class="right badge badge-danger">New</span> {% endcomment %}
+            </p>
+          </a>
+        </li>  
             <li class="nav-item">
               {% url 'student_apply_leave' as student_apply_leave %}
               <a href="{{ student_apply_leave }}" class="nav-link {% if request.path == student_apply_leave %} active {% endif %}">
