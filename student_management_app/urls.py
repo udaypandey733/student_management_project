@@ -27,6 +27,15 @@ urlpatterns = [
     path('student_profile/', StudentViews.student_profile, name="student_profile"),
     path('student_profile_update/', StudentViews.student_profile_update, name="student_profile_update"),
     path('student_view_result/', StudentViews.student_view_result, name="student_view_result"),
+    path('study_materials/', StudentViews.study_materials, name="study_materials"),
+    path('sem1-1notes/', StudentViews.semone, name="sem1-1"),
+    path('sem1-2notes/', StudentViews.semtwo, name="sem1-2"),
+    path('sem2-1notes/', StudentViews.semthree, name="sem2-1"),
+    path('sem2-2notes/', StudentViews.semfour, name="sem2-2"),
+    path('sem3-1notes/', StudentViews.semfive, name="sem3-1"),
+    path('sem3-2notes/', StudentViews.semsix, name="sem3-2"),
+    path('sem4-1notes/', StudentViews.semseven, name="sem4-1"),
+    path('sem4-2notes/', StudentViews.semeight, name="sem4-2"),
 
     # URLS for Staff
     path('staff_home/', StaffViews.staff_home, name="staff_home"),

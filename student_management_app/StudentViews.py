@@ -218,3 +218,36 @@ def total_subjects(request):
 
 def notifications(request):
     return render(request, "student_template/notifications.html")
+
+
+def study_materials(request):
+    return render(request, "student_template/study_materials.html")
+
+def semone(request):
+    return render(request, "student_template/sem1-1.html") 
+
+def semtwo(request):
+    return render(request, "student_template/sem1-2.html")
+
+def semthree(request):
+    return render(request, "student_template/sem2-1.html")            
+
+
+def semfour(request):
+    return render(request, "student_template/sem2-2.html")            
+
+
+def semfive(request):
+    return render(request, "student_template/sem3-1.html") 
+
+
+def semsix(request):
+    return render(request, "student_template/sem3-2.html")            
+
+
+def semseven(request):
+    return render(request, "student_template/sem4-1.html")            
+
+
+def semeight(request):
+    return render(request, "student_template/sem4-2.html")      
