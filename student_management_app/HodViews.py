@@ -269,11 +269,13 @@ def add_session_save(request):
         messages.error(request, "Invalid Method")
         return redirect('add_course')
     else:
+        session_id = request.POST.get('session_id')
         session_start_year = request.POST.get('session_start_year')
         session_end_year = request.POST.get('session_end_year')
 
         try:
-            sessionyear = SessionYearModel(session_start_year=session_start_year,
+            sessionyear = SessionYearModel(id=session_id,
+                                           session_start_year=session_start_year,
                                            session_end_year=session_end_year)
             sessionyear.save()
             messages.success(request, "Session Year added Successfully!")
