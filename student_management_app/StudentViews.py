@@ -219,6 +219,7 @@ def total_subjects(request):
 def notifications(request):
     return render(request, "student_template/notifications.html")
     
+
 def study_materials(request):
     return render(request, "student_template/study_materials.html")
 
@@ -250,3 +251,4 @@ def semseven(request):
 
 def semeight(request):
     return render(request, "student_template/sem4-2.html")        
+
