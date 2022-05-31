@@ -5,7 +5,7 @@ from django.dispatch import receiver
 
 
 class SessionYearModel(models.Model):
-    id = models.Year(primary_key=True)
+    id = models.PositiveIntegerField(primary_key=True)
     session_start_year = models.DateField()
     session_end_year = models.DateField()
     objects = models.Manager()

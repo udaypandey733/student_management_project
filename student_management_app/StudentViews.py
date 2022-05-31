@@ -220,3 +220,5 @@ def notifications(request):
     return render(request, "student_template/notifications.html")
     
       
+def study_materials(request):
+    pass      
